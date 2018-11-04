@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titleBar{
+    display: flex; 
+    background: #E0EBE8;
+    position: fixed;
+    z-index: 1000;   
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.left{
+    flex: 1.5;
+}
+
+.right{
+    flex: 1;
+}
+
+.right ul{
+    display: flex;
+}
+
+.right ul li{
+    display: block;
+    flex: 1;
+    list-style: none;
+}
+
+.right ul li a{
+    color: #0086A3;
+    text-decoration: none;  
+    text-align: center;
+    display: block;  
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 55px; */
+    background: #E0EBE8;
+    height: 100vh;
+}
+
+#welcome-section .welcome-content{
+    margin: auto;    
+}
+
+.welcome-content h1{
+    margin: 0;
+}
+
+#welcome-section p{    
+    color: #698D00;
+    margin: 0;
+    text-align: center;
+}
+
+#projects{
+    padding: 15px;
+    min-height: 100vh;
+}
+
+#projects .project-title{
+    color: #0086A3;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#profile{
+    background: #C8F7C5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile .header-section{
+    display: flex;        
+    flex: 1;    
+}
+
+.header-section header{
+    margin: auto;
+}
+
+.header-section header h2{
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-section header p{
+    margin: 0;
+    text-align: center;
+}
+
+#profile-link{
+    flex: 1;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-around;
+}
+
+#profile-link .link{
+    flex-basis: 15%;
+    justify-content: space-between;
+    border: 1px solid lightgreen;    
+    display: flex;    
+}
+
+.link a {
+    margin: auto;
+    display: block;    
+    width: 100px;
+    border-radius: 100%;
+    background: gray;
+    text-align: center;    
+}
