@@ -101,7 +101,7 @@ body{
     text-align: center;
 }
 
-#profile-link{
+#profile-links{
     flex: 1;
     display: flex;
     margin-left: 15%;
@@ -111,7 +111,7 @@ body{
     padding-bottom: 20px;
 }
 
-#profile-link .link{    
+#profile-links .link{    
     justify-content: space-between;
     border: 2px solid #93C997;    
     display: flex;    
@@ -170,4 +170,15 @@ body{
     margin: 10px;  
     color: #0086A3;  
     text-align: center;
+}
+
+@media(max-width: 800px){
+    #profile-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+    }
+
+    #profile-links .link{
+        margin: 10px auto;        
+    }
 }
