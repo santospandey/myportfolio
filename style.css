@@ -107,20 +107,67 @@ body{
     margin-left: 15%;
     margin-right: 15%;
     justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-#profile-link .link{
-    flex-basis: 15%;
+#profile-link .link{    
     justify-content: space-between;
-    border: 1px solid lightgreen;    
+    border: 2px solid #93C997;    
     display: flex;    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #E0EBE8;
 }
 
 .link a {
+    margin: auto;             
+    text-align: center;   
+    text-decoration: none;
+    color: #0086A3;
+    font-weight: bold;
+}
+
+#footer{
+    padding: 20px;
+    background: #22313F;
+    color: #fff;
+}
+
+#footer .footer-text{
     margin: auto;
-    display: block;    
-    width: 100px;
-    border-radius: 100%;
-    background: gray;
-    text-align: center;    
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.footer-text p{
+    margin: 0.5em;
+}
+
+.grid-container{
+    padding: 20px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2em;    
+}
+
+.grid-container>div:nth-child(odd){    
+    border: 1px solid #ddd;
+    margin: auto;
+    cursor: pointer;
+}
+
+.grid-container>div:nth-child(even){    
+    border: 1px solid #ddd;
+    margin: auto;
+    cursor: pointer;    
+}
+
+.grid-1 h3{
+    margin: 10px;  
+    color: #0086A3;  
+    text-align: center;
 }
